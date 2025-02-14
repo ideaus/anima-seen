@@ -1,0 +1,154 @@
+:root {
+    --icon-font-family: 'Phosphor Icons';
+    --icon-font-size: 28px;
+    /* Increased icon size */
+    --icon-color: #333;
+    --icon-hover-color: #555;
+    --folder-colors: #4A90E2, #50E3C2, #F5A623, #E74C3C, #9B59B6;
+}
+
+@import url('https://unpkg.com/phosphor-icons@1.4.0/css/phosphor.css');
+
+.folder-icon {
+    font-family: var(--icon-font-family);
+    font-size: var(--icon-font-size);
+    color: var(--icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.folder-icon::before {
+    content: '\f07b';
+    /* Unicode for folder icon */
+    font-family: 'Phosphor Icons';
+}
+
+.folder-icon:hover {
+    color: var(--icon-hover-color);
+}
+
+#folders ul {
+    list-style: none;
+    padding: 0;
+}
+
+#folders li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Increased gap */
+    margin-bottom: 16px;
+    /* Increased margin */
+    padding: 16px 24px;
+    /* Increased padding */
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+#folders .ph-folder {
+    color: #666;
+    font-size: 1.2em;
+    transition: color 0.2s ease;
+    font-weight: bold;
+    /* Make icons bold */
+}
+
+#folders .ph-folder-fill {
+    /* Changed to filled folder icon */
+    font-size: var(--icon-font-size);
+    transition: transform 0.2s ease;
+}
+
+/* Color each folder differently */
+#folders li:nth-child(1) .ph-folder-fill {
+    color: #4A90E2;
+}
+
+#folders li:nth-child(2) .ph-folder-fill {
+    color: #50E3C2;
+}
+
+#folders li:nth-child(3) .ph-folder-fill {
+    color: #F5A623;
+}
+
+#folders li:nth-child(4) .ph-folder-fill {
+    color: #E74C3C;
+}
+
+#folders li:nth-child(5) .ph-folder-fill {
+    color: #9B59B6;
+}
+
+#folders li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transform: translateX(4px);
+}
+
+#folders li:hover .ph-folder {
+    color: #333;
+}
+
+#folders li:hover .ph-folder-fill {
+    transform: scale(1.1);
+}
+
+#folders a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    /* Make links bolder */
+}
+
+#folders a:hover {
+    color: #000;
+}
+
+.folder-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.folder-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.folder-item .ph-folder-fill {
+    font-size: var(--icon-font-size);
+    transition: transform 0.2s ease;
+}
+
+.folder-item:hover {
+    background-color: #f5f5f5;
+    transform: translateX(4px);
+}
+
+.folder-item:hover .ph-folder-fill {
+    transform: scale(1.1);
+}
+
+/* Color each folder differently */
+.folder-item:nth-child(1) .ph-folder-fill {
+    color: #4A90E2;
+}
+
+.folder-item:nth-child(2) .ph-folder-fill {
+    color: #50E3C2;
+}
+
+.folder-item:nth-child(3) .ph-folder-fill {
+    color: #F5A623;
+}

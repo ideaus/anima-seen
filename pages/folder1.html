@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Components</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <nav class="mb-8">
+            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+                <i class="ph ph-arrow-left mr-2"></i>
+                Back to Folders
+            </a>
+        </nav>
+
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Animation Components</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Animation Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="p-6 bg-gray-50">
+                    <div class="animation-demo w-full h-32 bg-primary rounded-md"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Hover Effect</h3>
+                    <p class="text-gray-600 mb-4">A smooth transition on hover state</p>
+                    <div class="flex gap-3">
+                        <button class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors">
+                            <i class="ph ph-code mr-2"></i>
+                            View Code
+                        </button>
+                        <button class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors">
+                            <i class="ph ph-copy mr-2"></i>
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animation Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="p-6 bg-gray-50">
+                    <div class="animation-demo w-full h-32 bg-secondary rounded-md"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Fade In</h3>
+                    <p class="text-gray-600 mb-4">Smooth fade in animation</p>
+                    <div class="flex gap-3">
+                        <button class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors">
+                            <i class="ph ph-code mr-2"></i>
+                            View Code
+                        </button>
+                        <button class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors">
+                            <i class="ph ph-copy mr-2"></i>
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
